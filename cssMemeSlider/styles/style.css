@@ -1,7 +1,58 @@
+
+/* шаблон для коммитов
+"`LANG=en_EN date +'(%a, %b %d, %Y %r)'`" 
+*/
+
+html {
+    font-size: 3vw;
+}
+
+body {
+    background-color: #25272A;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
 @media screen and (min-width: 500px) {
+    .container {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        overflow-x: auto;
+    }
 
+    .card {
+        width: 87vw;
+        height: auto;
+        margin-top: 5vw;
+        margin-left: 6.5vw;
+        margin-right: 6.5vw;
+        flex-shrink: 0;
+        flex-direction: column;
+        justify-content: top;
+    }
+
+    .meme-gif {
+        width: 87vw;
+        height: auto;
+    }
+    
+    .meme-gif img {
+        width: 100%;
+        height: auto;
+    }
+    .controls {
+        width: 18vw;
+    }
+
+    .caption {
+        font-size: 1.5rem;
+        color: #F7F9F8;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
 }
 
-@media screen and (min-width: 1024px) {
-
-}
+@media screen and (min-width: 1024px) {}
